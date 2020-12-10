@@ -1,0 +1,23 @@
+Welcome to the January 2020 Beginning Python class!
+
+We will use this Git repo for many things in class.  Particularly, all
+the HTML slide decks used in class are stored here, for your review.
+You can find the exercise text here, and once an exercise is complete,
+the answer key code.  You will add your code here.
+
+To clone this repo, click the "Clone" button in the upper right hand
+corner of the Gitlab window, and copy the text there, which starts with
+"git clone".  Paste this into a terminal window, and when you run it,
+it will copy all the files down to your computer.  Make sure you use
+the "cd" command to change the current working directory to the place
+you want to have your code -- I keep my programming files in a
+directory called "devel", but you can do anything you like.  Just make
+sure you can find it again.
+
+We meet every Thursday at 2 PM Pacific time (5 pm Eastern time), at
+
+https://disney.zoom.us/j/95842500730?pwd=OGRSbmtWaElKdTlDOWZFZzhTbkFkZz09
+
+In addition, we have office hours every Thursday at 11 am Pacific time,
+which is a free-form time to bring problems or questions to discuss in
+an informal environment.
