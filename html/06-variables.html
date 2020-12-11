@@ -8,12 +8,16 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+        <link rel="stylesheet" href="dist/local.css">
+
 	</head>
 	<body>
+        <!-- <style> code { color: #e7c759; } </style> -->
 		<div class="reveal">
 			<div class="slides">
 				<section>
@@ -73,19 +77,55 @@ hearts</pre></code>
                     </section>
                 </section>
                 <section>
-                    <h2> Objects in Python </h2>
-                    <p> Everything in Python is an "object."  A variable
-                    takes on the characteristics of the object it
-                    points to.  A variable can contain any object.
+                    <section>
+                        <h2> Objects in Python </h2>
+                        <p> Everything in Python is an "object."  A variable
+                        takes on the characteristics of the object it
+                        points to.  A variable can contain any object.
+                    </section>
+                    <section>
+                        <h2> Data Types </h2>
+                        <p> Python recognizes many data types, and more can
+                        be created.  Variables are not limited in which
+                        types they can take.  Python variables are not
+                        "typed."
+                    </section>
+                    <section>
+                        <h2> Type Checking </h2>
+                        <p> Python checks types at runtime.  There is
+                        an optional system for compile-time type
+                        checking.
+                    </section>
                 </section>
                 <section>
-                    <h2> Exercise </h2>
-                    <p> Start the interpreter, and create a variable
-                    called <code>card</code>, which points to the
-                    string, <code>"2 of hearts"</code>.  Type the bare
-                    word <code>card</code> into the interpreter, then
-                    type <code><pre>print(card)</pre></code>  What
-                    happens?  What seems to be the difference?
+                    <h2> Exercise 1 </h2>
+                    <ul>
+                        <li> Start the interpreter
+                        <li> Create a variable called <code>card</code>,
+                        which points to the string, <code>"2 of
+                        hearts"</code>
+                        <li> Type the bare word <code>card</code> into
+                        the interpreter
+                        <li> Type <code>print(card)</code>
+                    </ul>
+                    <p> What happens?  What seems to be the difference?
+                </section>
+                <section>
+                    <h2> Exercise 2 </h2>
+                    <p> Using the interpreter:
+                    <ul>
+                        <li> Create <code>suit</code> pointing to
+                        <code>"hearts"</code>
+                        <li> Create <code>value</code> pointing to
+                        <code>2</code>
+                        <li> Run <code>type(suit)</code>
+                        <li> Run <code>type(value)</code>
+                    </ul>
+                    <p> What happens?  What are the differences?
+                </section>
+                <section>
+                    <h2> What's next </h2>
+                    <p><a href="07-data-types.html">Data types</a>
                 </section>
 			</div>
 		</div>
