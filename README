@@ -7,8 +7,10 @@ the answer key code.  You will add your code here.
 
 DIRECTORIES IN THIS REPO
 
-html: This contains the slides we use in class.  Open any of the .html
-files to see that deck's slides.  Navigate with arrow keys.
+html: This contains the slides we use in class.  Open any of the
+.html files with your browser to see that deck's slides.  Navigate
+with arrow keys.  You can open these with the File -> Open menu item on
+your browser, or by double-clicking the file name.
 
 exercises: Here we will put the instructions for class exercises, as
 well as our demo code, once the exercise is complete.
