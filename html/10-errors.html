@@ -33,30 +33,33 @@ IndexError: list index out of range</pre>
                         <h2> Dissecting the Traceback </h2>
                         <p> Here's what that means, in detail:
                         <p><pre>Traceback (most recent call last):</pre>
-                        <p> "Hey, an error occurred.  The bottom line is the
-                        most interesting one."
+                        <blockquote> "Hey, an error occurred.  The bottom line
+                        is the most interesting one."</blockquote>
                     </section>
                     <section>
                         <p><pre> File "&lt;stdin&gt;", line 1, in &lt;module&gt;</pre>
-                        <p> "We were in the file called &lt;stdin&gt;, on the
-                        first line, in the module called &lt;module&gt;."
-                        <p> &lt;stdin&gt; is a special filename you'll see
-                        when working in the interpreter directly.
-                        <p> &lt;module&gt; is used when there is no module
-                        name (more on modules later).
+                        <blockquote> "We were in the file called
+                        <code>&lt;stdin&gt;</code>, on the first line, in the
+                        module called <code>&lt;module&gt;</code>."
+                        </blockquote>
+                        <p> <code>&lt;stdin&gt;</code> is a special filename
+                            you'll see when working in the interpreter directly.
+                        <p> <code>&lt;module&gt;</code> is used when there is
+                        no module name (more on modules later).
                     </section>
                     <section>
                         <p><pre>IndexError: list index out of range</pre>
 
                         <p> "This is the actual problem.  I ran into an
-                        IndexError, and the message that came with it was
-                        'list index out of range'."
+                        <code>IndexError</code>, and the message that came
+                        with it was <code>'list index out of range'</code>."
                     </section>
                     <section>
                         <h2> What It All Means </h2>
-                        <p> You know the location of the error (&lt;stdin&gt;,
-                        line 1), and you know the type of error.  You know the
-                        message that came with the error.
+                        <p> You know the location of the error
+                        (<code>&lt;stdin&gt;</code>, line 1), and you know the
+                        type of error.  You know the message that came with
+                        the error.
 
                         <p> Look at the code indicated by the error:
 
