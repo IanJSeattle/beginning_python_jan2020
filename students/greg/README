@@ -1,0 +1,14 @@
+Welcome to your personal directory.  This is your space to do any
+experimenting you want to do in git, as well as check in exercise code.
+
+Here's a quick cheat sheet on using git:
+
+git status: Check the current status of your repo -- notably which
+files are not checked in
+
+git add <filename>: Add a filename to the git repo (only necessary when
+a file is new)
+
+git commit: Commit changes to the repo.  If you run "git commit -m
+<message>", it will take whatever appears after -m  as the commit
+message -- enclose the message in quotes.
