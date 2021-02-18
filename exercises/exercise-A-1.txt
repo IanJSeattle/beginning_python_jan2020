@@ -1,0 +1,24 @@
+Exercise A-1
+
+Look in the examples/ directory, at gen_data.py and analyze_data.py.
+Open each file, and try to understand what they do.  Try using comment
+characters (# is the comment character in Python) to temporarily
+disable parts of the program, and see what breaks.  The only danger
+from running these programs is that if you have a file called
+"data.csv" in the current directory, it will be overwritten when you
+run gen_data.py.
+
+If you can wrap your mind around how analyze_data.py works, try writing
+a simple new function called print_stats() that prints out the
+following statistics:
+
+* mean (average) of all data points
+* smallest data point
+* largest data point
+
+I recommend running a for loop over the data to collect these
+statistics.
+
+If this is too hard, that's ok!  This class introduced a whole lot of
+new concepts all at once, and did not introduce everything necessary to
+finish this exercise.  This definitely falls under "extra credit." :D
