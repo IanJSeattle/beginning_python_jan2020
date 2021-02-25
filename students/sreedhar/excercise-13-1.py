@@ -7,4 +7,4 @@ print(slice2)
 print(slice3)
 
 list1 = ["a", "b", "c", "d", "e", "f", "g", "h","i"]
-print(list1[2:7:2])
+print(list1[2:7:1])
