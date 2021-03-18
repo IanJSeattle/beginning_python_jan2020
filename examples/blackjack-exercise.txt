@@ -1,0 +1,11 @@
+Blackjack exercise 1:
+
+Your exercise for next week (March 25) is to look at blackjack.py from
+the standpoint of a real game of blackjack, and come up with a list of
+features that are missing.  These should be plain english, I'm not
+looking for code.  Just a list of things that we need to add in order to
+make a functional game.
+
+Here are the rules of blackjack:
+
+https://www.officialgamerules.org/blackjack
