@@ -8,8 +8,8 @@ import random
 
 # my_deck = [('2', 'hearts'), ('3', 'hearts'), ('4', 'hearts')...]
 
-VALUES = [str(num) for num in range(2,11)]
-VALUES.extend(['J', 'Q', 'K', 'A'])
+VALUES = [(str(num), num) for num in range(2,11)]
+VALUES.extend([('J', 10), ('Q', 10), ('K', 10), ('A', 11)])
 
 SUITS = ['diamonds', 'hearts', 'spades', 'clubs']
 
@@ -18,7 +18,7 @@ def make_deck():
     this_deck = []
     for suit in SUITS:
         for value in VALUES:
-            this_card = (value, suit)
+            this_card = (value[0], suit)
             this_deck.append(this_card)
     return this_deck
 
@@ -44,14 +44,47 @@ def get_player_input(deck, hand):
     answer = ''
     while answer != 's':
         print('Your cards:')
+        points = get_hand_value(hand)
         for card in hand:
             print(card)
+        print(f'You have {points} points')
+        if points > 21:
+            print('Bust!')
+            return
         answer = input('Hit or stay? (h or s) ')
         if answer == 'h':
             deal_card(deck, hand)
     print('Your final hand:')
     for card in hand:
         print(card)
+
+
+def get_dealer_hand(deck, hand):
+    """ figure out the dealer's hand """
+    while True:
+        points = get_hand_value(hand)
+        if points < 19:
+            deal_card(deck, hand)
+        elif points > 21:
+            return "Bust"
+        else:
+            break
+
+
+def get_hand_value(hand):
+    """ determine the value of a hand """
+    points = 0
+    for card in hand:
+        points += get_points(card)
+    return points
+
+def get_points(card):
+    """ pass in a card tuple (value, suit), and return the number of points
+    it's worth """
+    value = card[0]
+    for item in VALUES:
+        if item[0] == value:
+            return item[1]
 
 
 def main():
@@ -64,6 +97,20 @@ def main():
     # now, player and dealer each have two cards
 
     get_player_input(my_deck, player_hand)
+    dealer_result = get_dealer_hand(my_deck, dealer_hand)
+    print("Dealer's hand:")
+    for card in dealer_hand:
+        print(card)
+    player_points = get_hand_value(player_hand)
+    dealer_points = get_hand_value(dealer_hand)
+    print(f"Dealer has {dealer_points} points")
+    if dealer_result == "Bust":
+        print("Dealer busts, you win!")
+    else:
+        if dealer_points > player_points:
+            print("Dealer wins!")
+        else:
+            print("You win!")
 
 
 def test_deal_cards():
